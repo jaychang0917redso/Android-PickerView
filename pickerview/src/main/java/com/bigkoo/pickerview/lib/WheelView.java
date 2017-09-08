@@ -262,7 +262,8 @@ public class WheelView extends View {
             maxTextHeight = rect.height() + 2;
 
         }
-        itemHeight = lineSpacingMultiplier * maxTextHeight;
+//        itemHeight = lineSpacingMultiplier * maxTextHeight;
+        itemHeight = 288;
     }
 
     void smoothScroll(ACTION action) {//平滑滚动的实现
