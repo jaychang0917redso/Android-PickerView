@@ -329,6 +329,7 @@ public class WheelView extends View {
     public final void setAdapter(WheelAdapter adapter) {
         this.adapter = adapter;
         remeasure();
+        requestLayout();
         invalidate();
     }
 
@@ -775,6 +776,7 @@ public class WheelView extends View {
     }
 
     public void setItemsVisible(int itemsVisible) {
-        this.itemsVisible = itemsVisible;
+        int topBottomExtra = 2;
+        this.itemsVisible = itemsVisible + topBottomExtra;
     }
 }
